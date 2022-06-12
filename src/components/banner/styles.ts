@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import Banner from "../../assets/Banner.jpg";
 
-export const Container = styled.div`
+export const Container = styled.section`
   height: 30rem;
   width: 100%;
   background-image: url(${Banner});
