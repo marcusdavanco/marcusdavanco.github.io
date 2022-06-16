@@ -4,7 +4,6 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 29.813rem;
   margin: 3.75rem 0;
 `;
 
@@ -24,7 +23,7 @@ export const Text = styled.p`
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.063rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3.75rem;
     color: #ccc;
     max-width: 47.188rem;
     text-align: center;
