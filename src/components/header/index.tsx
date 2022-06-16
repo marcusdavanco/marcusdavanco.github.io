@@ -1,11 +1,12 @@
-import { Container, Wrapper, Logo, Button } from "./styles";
+import { Container, Wrapper, Logo } from "./styles";
+import { Button } from "../button";
 
 export const Header = () => {
   return (
     <Container>
       <Wrapper>
         <Logo>Marcus Davanco</Logo>
-        <Button>Contact</Button>
+        <Button text="Contact" />
       </Wrapper>
     </Container>
   );

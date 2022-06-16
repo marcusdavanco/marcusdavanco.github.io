@@ -3,6 +3,7 @@ import { Header } from "./components/header";
 import { Banner } from "./components/banner";
 import { Intro } from "./components/intro";
 import { Filters } from "./components/filters";
+import { Gallery } from "./components/gallery";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <Intro />
       <Filters />
+      <Gallery />
     </>
   );
 }

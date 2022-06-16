@@ -21,6 +21,16 @@ export default createGlobalStyle`
   strong {
     font-weight: 500;
   }
+
+  h2 {
+    font-family: 'Barrio';
+    margin-bottom: 3.75rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #9c9c9c;
+  }
+
   button {
     cursor: pointer;
   }
