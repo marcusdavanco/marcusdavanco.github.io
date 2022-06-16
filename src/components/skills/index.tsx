@@ -17,7 +17,7 @@ export const Skills = () => {
             <Text>GNU/Linux</Text>
             <Text>Figma</Text>
             <Text>VSCode</Text>
-            <Text>Git/GitHub</Text>
+            <Text>Git / GitHub</Text>
             <Text>Firebase</Text>
             <Text>...</Text>
           </Card>
@@ -26,14 +26,14 @@ export const Skills = () => {
             <Text>CSS3</Text>
             <Text>Tailwind</Text>
             <Text>Styled Components</Text>
-            <Text>SASS/LESS</Text>
+            <Text>SASS / LESS</Text>
             <Text>...</Text>
           </Card>
           <Card>
             <CodeIcon />
             <Text>HTML5</Text>
-            <Text>JavaScript/TypeScript</Text>
-            <Text>ReactJS/ React Native</Text>
+            <Text>JavaScript / TypeScript</Text>
+            <Text>ReactJS / React Native</Text>
             <Text>RTL / Jest</Text>
             <Text>REST</Text>
             <Text>...</Text>

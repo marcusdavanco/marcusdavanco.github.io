@@ -33,11 +33,15 @@ export const Button = styled.button`
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5rem;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
 
   &:hover {
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
     background-color: #ff004d;
     color: #000;
+  }
+
+  &:active {
+    filter: brightness(0.6);
   }
 `;
