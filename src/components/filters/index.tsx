@@ -7,7 +7,7 @@ import PaletteIcon from "../../assets/palette_icon.svg?component";
 //@ts-ignore
 import ToolsIcon from "../../assets/tools_icon.svg?component";
 
-export const Skills = () => {
+export const Filters = () => {
   return (
     <Container>
       <Background>
