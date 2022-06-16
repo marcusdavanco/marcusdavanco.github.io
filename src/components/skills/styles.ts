@@ -36,6 +36,7 @@ export const Text = styled.p`
   font-size: 1.5rem;
   line-height: 2.063rem;
   margin-bottom: 0.625rem;
+  font-weight: bold;
 
   &:first-of-type {
     margin-top: 2rem;
