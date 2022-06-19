@@ -5,6 +5,7 @@ import { Intro } from "./components/intro";
 import { Filters } from "./components/filters";
 import { Gallery } from "./components/gallery";
 import { SocialProof } from "./components/socialProof";
+import { Contact } from "./components/contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Filters />
       <Gallery />
       <SocialProof />
+      <Contact />
     </>
   );
 }

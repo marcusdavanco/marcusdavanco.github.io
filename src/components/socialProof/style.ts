@@ -16,8 +16,8 @@ export const Content = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 16.313rem);
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 2.375rem;
-  grid-row-gap: 1.813rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
   place-items: center;
 
   .luar {
