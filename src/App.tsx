@@ -4,6 +4,7 @@ import { Banner } from "./components/banner";
 import { Intro } from "./components/intro";
 import { Filters } from "./components/filters";
 import { Gallery } from "./components/gallery";
+import { SocialProof } from "./components/socialProof";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Intro />
       <Filters />
       <Gallery />
+      <SocialProof />
     </>
   );
 }
