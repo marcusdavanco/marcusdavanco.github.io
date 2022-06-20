@@ -6,6 +6,7 @@ import { Filters } from "./components/filters";
 import { Gallery } from "./components/gallery";
 import { SocialProof } from "./components/socialProof";
 import { Contact } from "./components/contact";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Gallery />
       <SocialProof />
       <Contact />
+      <Footer />
     </>
   );
 }
