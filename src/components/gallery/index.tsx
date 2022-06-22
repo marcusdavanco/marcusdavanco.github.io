@@ -12,7 +12,14 @@ export const Gallery = () => {
         <Card href="#" />
         <Card href="#" />
         <Card href="#" />
-        <Button text="view more" activeColor="#fff" color="#fff" />
+        <Button
+          activeColor="#fff"
+          color="#fff"
+          onClick={() => console.log("view more")}
+          type="button"
+        >
+          view more
+        </Button>
       </Content>
     </Container>
   );

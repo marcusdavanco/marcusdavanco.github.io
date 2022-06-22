@@ -4,6 +4,7 @@ interface ButtonProps {
   color?: string;
   isCta: boolean;
   activeColor?: string;
+  type: "button" | "submit" | "reset";
 }
 
 export const Container = styled.button<ButtonProps>`

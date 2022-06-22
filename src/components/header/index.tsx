@@ -6,7 +6,9 @@ export const Header = () => {
     <Container>
       <Wrapper>
         <Logo>Marcus Davanco</Logo>
-        <Button text="Contact" />
+        <Button type="button" onClick={() => console.log("Contact")}>
+          Contact
+        </Button>
       </Wrapper>
     </Container>
   );
