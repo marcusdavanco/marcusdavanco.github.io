@@ -5,6 +5,7 @@ interface ButtonProps {
   isCta: boolean;
   activeColor?: string;
   type: "button" | "submit" | "reset";
+  className?: string;
 }
 
 export const Container = styled.button<ButtonProps>`

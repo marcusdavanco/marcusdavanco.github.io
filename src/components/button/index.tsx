@@ -8,6 +8,7 @@ interface ButtonProps {
   isCta?: boolean;
   onClick: () => void;
   type: "button" | "submit" | "reset";
+  className?: string;
 }
 
 export const Button = ({
@@ -17,6 +18,7 @@ export const Button = ({
   onClick,
   children,
   type,
+  className,
 }: ButtonProps) => {
   return (
     <Container
@@ -25,6 +27,7 @@ export const Button = ({
       activeColor={activeColor}
       onClick={onClick}
       type={type}
+      className={className}
     >
       {children}
     </Container>

@@ -12,6 +12,7 @@ export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
+      bodyOpenClassName={"ReactModal__Body--open"}
       overlayClassName={{
         base: "react-modal-overlay",
         afterOpen: "react-modal-overlay--afterOpen",
@@ -21,7 +22,12 @@ export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
       closeTimeoutMS={300}
     >
       <Container>
-        <Button type="button" onClick={onRequestClose} activeColor="#fff">
+        <Button
+          className="react-modal-close"
+          type="button"
+          onClick={onRequestClose}
+          activeColor="#fff"
+        >
           X
         </Button>
         <h2>Thanks for reaching out!</h2>
