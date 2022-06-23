@@ -12,13 +12,16 @@ export const Footer = () => {
     <Container>
       <Wrapper>
         <Links>
-          <a href="#">
+          <a href="https://github.com/MarcusDavanco" target="_blank">
             <Github />
           </a>
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/marcus-davan%C3%A7o-a9940018a/"
+            target="_blank"
+          >
             <Linkedin />
           </a>
-          <a href="#">
+          <a href="mailto:march0514s@gmail.com" target="_blank">
             <Email />
           </a>
         </Links>

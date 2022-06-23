@@ -1,4 +1,4 @@
-import { Button } from "../../../button";
+import { Button } from "../../button";
 import { Container, Text } from "./styles";
 import Modal from "react-modal";
 
@@ -47,11 +47,13 @@ export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
 
           <div className="message">
             <label htmlFor="message">Message</label>
-            <input id="message" type="textarea" />
+            <textarea id="message" />
           </div>
 
           <Button
             type="submit"
+            isCta={true}
+            color="#fff"
             onClick={() => console.log("send")}
             activeColor="#fff"
           >

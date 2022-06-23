@@ -15,7 +15,12 @@ export const Gallery = () => {
         <Button
           activeColor="#fff"
           color="#fff"
-          onClick={() => console.log("view more")}
+          onClick={() =>
+            window.open(
+              "https://github.com/MarcusDavanco?tab=repositories",
+              "_blank"
+            )
+          }
           type="button"
         >
           view more

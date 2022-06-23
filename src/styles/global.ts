@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import Mail from "../assets/Mail.jpg";
 
 export default createGlobalStyle`
   * {
@@ -65,21 +66,30 @@ export default createGlobalStyle`
         }
     }
     .react-modal-content {
-        width: 100%;
-        max-width: 980px;              
-        max-height: 96%;
-        background: #fff;
-        box-shadow: 24px 24px 48px rgba(112, 112, 112, 0.15);
-        padding: 30px 35px;
+        width: 100%;  
+        max-width: 50rem;        
+        height: 37.5rem;
+        background: #404040;
+        box-shadow: 24px 24px 48px rgba(112, 112, 112, 0.15);        
         position: relative;
-        border-radius: 0.24rem;
-        border-radius: 20px;
-        transition: all 0.2s ease;        
+        border-radius: 4px;        
+        transition: all 0.2s ease;
+        display: flex;
+        flex-direction: row-reverse;
+        background-image: url(${Mail});
+        background-repeat: no-repeat;        
     }
 
     .react-modal-close {
       // TODO
     }
+
+
+
+
+
+
+    
 
     @media screen and (max-width: 768px) {
         .react-modal-content {

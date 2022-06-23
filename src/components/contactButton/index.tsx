@@ -1,9 +1,19 @@
 import { useCallback, useState } from "react";
 
-import { Button } from "../../button";
+import { Button } from "../button";
 import { ContactModal } from "./contactModal";
 
-export const ContactButton = () => {
+interface ContactButtonProps {
+  isCta: boolean;
+  color: string;
+  activeColor: string;
+}
+
+export const ContactButton = ({
+  isCta,
+  color,
+  activeColor,
+}: ContactButtonProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenContactModal = useCallback(() => {
@@ -18,9 +28,9 @@ export const ContactButton = () => {
       <ContactModal isOpen={isOpen} onRequestClose={handleCloseContactModal} />
       <Button
         onClick={handleOpenContactModal}
-        isCta={true}
-        color="#fff"
-        activeColor="#fff"
+        isCta={isCta}
+        color={color}
+        activeColor={activeColor}
         type="button"
       >
         Contact

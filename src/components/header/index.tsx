@@ -1,14 +1,12 @@
 import { Container, Wrapper, Logo } from "./styles";
-import { Button } from "../button";
+import { ContactButton } from "../contactButton";
 
 export const Header = () => {
   return (
     <Container>
       <Wrapper>
         <Logo>Marcus Davanco</Logo>
-        <Button type="button" onClick={() => console.log("Contact")}>
-          Contact
-        </Button>
+        <ContactButton isCta={false} color="#f4004d" activeColor="#000" />
       </Wrapper>
     </Container>
   );
