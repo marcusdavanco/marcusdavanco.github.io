@@ -1,6 +1,12 @@
+import { useEffect, useState, useCallback, FormEvent } from "react";
+import Modal from "react-modal";
+import emailjs from "@emailjs/browser";
+
+//@ts-ignore
+import { emailKeys } from "../../../config/emailkey";
+
 import { Button } from "../../button";
 import { Container, Text } from "./styles";
-import Modal from "react-modal";
 
 interface ModalProps {
   isOpen: boolean;
@@ -8,6 +14,38 @@ interface ModalProps {
 }
 
 export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
+  const [isSendingMessage, setIsSendingMessage] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isMessageSent, setIsMessageSent] = useState(false);
+
+  useEffect(() => {
+    emailjs.init(emailKeys.PUBLIC_KEY);
+  }, []);
+
+  const handleSubmit = useCallback(async (e: FormEvent) => {
+    e.preventDefault();
+
+    setIsSendingMessage(true);
+
+    try {
+      await emailjs.sendForm(
+        emailKeys.SERVICE_ID,
+        emailKeys.TEMPLATE_ID,
+        "#myForm"
+      );
+    } catch (err) {
+      console.error(err);
+    }
+
+    setIsSendingMessage(false);
+    setIsMessageSent(true);
+    setName("");
+    setEmail("");
+    setMessage("");
+  }, []);
+
   return (
     <Modal
       isOpen={isOpen}
@@ -34,20 +72,38 @@ export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
         <Text>
           Please leave your message below and I’ll return as soon as possible.
         </Text>
-        <form>
+        <form onSubmit={handleSubmit} id="myForm">
           <div className="name">
             <label htmlFor="name">Name</label>
-            <input id="name" />
+            <input
+              id="name"
+              name="name"
+              required
+              onChange={(event) => {
+                setName(event.target.value);
+              }}
+            />
           </div>
 
           <div className="email">
             <label htmlFor="email">E-mail</label>
-            <input id="email" type="email" />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              onChange={(event) => setEmail(event.target.value)}
+            />
           </div>
 
           <div className="message">
             <label htmlFor="message">Message</label>
-            <textarea id="message" />
+            <textarea
+              id="message"
+              name="message"
+              required
+              onChange={(event) => setMessage(event.target.value)}
+            />
           </div>
 
           <Button
