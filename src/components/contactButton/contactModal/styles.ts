@@ -39,6 +39,10 @@ export const Container = styled.article`
   h2 {
     margin-bottom: 0.5rem;
     z-index: 1;
+
+    &.success {
+      transform: translateY(14.75rem);
+    }
   }
 
   & > button {
@@ -106,4 +110,8 @@ export const Text = styled.p`
   margin-bottom: 2rem;
   max-width: 19.313rem;
   z-index: 1;
+
+  &.success {
+    transform: translateY(14.375rem);
+  }
 `;

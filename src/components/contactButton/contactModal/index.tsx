@@ -3,6 +3,8 @@ import Modal from "react-modal";
 import emailjs from "@emailjs/browser";
 
 //@ts-ignore
+import Ellipsis from "../../../assets/ellipsis.svg?component";
+
 import { emailKeys } from "../../../config/emailkey";
 
 import { Button } from "../../button";
@@ -68,54 +70,67 @@ export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
         >
           X
         </Button>
-        <h2>Thanks for reaching out!</h2>
-        <Text>
-          Please leave your message below and I’ll return as soon as possible.
-        </Text>
-        <form onSubmit={handleSubmit} id="myForm">
-          <div className="name">
-            <label htmlFor="name">Name</label>
-            <input
-              id="name"
-              name="name"
-              required
-              onChange={(event) => {
-                setName(event.target.value);
-              }}
-            />
-          </div>
+        {!isMessageSent ? (
+          <>
+            <h2>Thanks for reaching out!</h2>
+            <Text>
+              Please leave your message below and I’ll return as soon as
+              possible.
+            </Text>
+            <form onSubmit={handleSubmit} id="myForm">
+              <div className="name">
+                <label htmlFor="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  autoComplete="off"
+                  required
+                  onChange={(event) => {
+                    setName(event.target.value);
+                  }}
+                />
+              </div>
 
-          <div className="email">
-            <label htmlFor="email">E-mail</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              onChange={(event) => setEmail(event.target.value)}
-            />
-          </div>
+              <div className="email">
+                <label htmlFor="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autoComplete="off"
+                  required
+                  onChange={(event) => setEmail(event.target.value)}
+                />
+              </div>
 
-          <div className="message">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              onChange={(event) => setMessage(event.target.value)}
-            />
-          </div>
+              <div className="message">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  autoComplete="off"
+                  required
+                  onChange={(event) => setMessage(event.target.value)}
+                />
+              </div>
 
-          <Button
-            type="submit"
-            isCta={true}
-            color="#fff"
-            onClick={() => console.log("send")}
-            activeColor="#fff"
-          >
-            Send
-          </Button>
-        </form>
+              <Button
+                type="submit"
+                isCta={true}
+                color="#fff"
+                activeColor="#fff"
+                onClick={() => {}}
+              >
+                {isSendingMessage ? <Ellipsis /> : "Send"}
+              </Button>
+            </form>
+          </>
+        ) : (
+          <>
+            <h2 className="success">Your message was sent!</h2>
+            <Text className="success">I’ll return as soon as possible.</Text>
+          </>
+        )}
       </Container>
     </Modal>
   );
