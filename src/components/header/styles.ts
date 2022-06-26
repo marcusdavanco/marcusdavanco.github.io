@@ -21,4 +21,8 @@ export const Logo = styled.p`
   text-transform: uppercase;
   line-height: 1.5rem;
   font-weight: 700;
+
+  @media (max-width: 720px) {
+    max-width: 145px;
+  }
 `;

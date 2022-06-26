@@ -36,6 +36,18 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  @media (max-width: 1080px){
+    html {
+      font-size: 93.75%;
+    }    
+  }
+
+  @media (max-width: 720px){
+    html {
+      font-size: 87.5%;
+    }
+  }
+
   // React Modal
 
     .ReactModal__Body--open {
@@ -82,14 +94,7 @@ export default createGlobalStyle`
 
     .react-modal-close {
       // TODO
-    }
-
-
-
-
-
-
-    
+    }    
 
     @media screen and (max-width: 768px) {
         .react-modal-content {

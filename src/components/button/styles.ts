@@ -67,4 +67,8 @@ export const Container = styled.button<ButtonProps>`
   &:active {
     filter: brightness(0.6);
   }
+
+  @media (max-width: 720px) {
+    padding: 0.75rem 1rem 0.5rem 1rem;
+  }
 `;
