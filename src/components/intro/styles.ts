@@ -17,6 +17,13 @@ export const Container = styled.section`
     left: 20%;
     top: -20%;
     z-index: -1;
+
+    @media (max-width: 720px) {
+      transform: rotate(25deg);
+      top: -25%;
+      left: 2%;
+      opacity: 0.5;
+    }
   }
 
   &:after {
@@ -29,6 +36,13 @@ export const Container = styled.section`
     right: 14%;
     bottom: -72%;
     z-index: -1;
+
+    @media (max-width: 720px) {
+      transform: rotate(30deg);
+      bottom: -65%;
+      right: 2%;
+      opacity: 0.5;
+    }
   }
 `;
 
@@ -57,6 +71,12 @@ export const Text = styled.p`
       font-weight: 900;
       margin-left: 0.25rem;
       color: #dedede;
+    }
+
+    @media (max-width: 720px) {
+      & {
+        max-width: 90%;
+      }
     }
   }
 `;
