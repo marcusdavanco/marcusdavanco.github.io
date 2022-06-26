@@ -12,6 +12,12 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 720px) {
+    & {
+      background-position: 75% 10%;
+    }
+  }
 `;
 
 export const Title = styled.p`
