@@ -9,7 +9,7 @@ export const Container = styled.article`
   align-items: center;
   position: relative;
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     padding: 1rem 1.5rem 1rem;
   }
 
