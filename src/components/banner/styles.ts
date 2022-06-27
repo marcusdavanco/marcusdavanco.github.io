@@ -7,7 +7,6 @@ export const Container = styled.section`
   width: 100%;
   background-image: url(${Banner});
   background-size: cover;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
