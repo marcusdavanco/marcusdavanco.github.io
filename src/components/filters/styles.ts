@@ -17,7 +17,7 @@ export const Container = styled.section`
     z-index: -1;
 
     @media (max-width: 720px) {
-      bottom: -9%;
+      bottom: -5%;
       left: 2%;
       transform: rotate(-10deg);
       opacity: 0.5;
