@@ -6,6 +6,10 @@ export const Container = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 720px) {
+    height: unset;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -38,4 +42,8 @@ export const Links = styled.div`
 
 export const Text = styled.p`
   color: #fff;
+
+  @media (max-width: 720px) {
+    text-align: center;
+  }
 `;
