@@ -8,6 +8,11 @@ export const Container = styled.section`
   padding-bottom: 7.5rem;
   position: relative;
 
+  @media (max-width: 720px) {
+    margin-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -17,5 +22,11 @@ export const Container = styled.section`
     left: 49.5%;
     z-index: -1;
     top: -15%;
+
+    @media (max-width: 720px) {
+      transform: scale(75%);
+      opacity: 0.5;
+      top: -20%;
+    }
   }
 `;
