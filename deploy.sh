@@ -16,8 +16,7 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git remote origin https://github.com/MarcusDavanco/marcusdavanco.github.io.git
-git push -f main
+git push -f https://github.com/MarcusDavanco/marcusdavanco.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
