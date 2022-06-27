@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   background: #000;
-  height: 6.25rem;
+  min-height: 6.25rem;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +23,7 @@ export const Logo = styled.p`
   line-height: 1.5rem;
   font-weight: 700;
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     max-width: 145px;
   }
 `;

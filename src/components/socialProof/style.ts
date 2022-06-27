@@ -44,4 +44,12 @@ export const Content = styled.section`
       width: 35%;
     }
   }
+
+  @media (min-width: 721px) and (max-width: 820px) {
+    max-width: 80.69%;
+    grid-template-columns: repeat(4, 1fr);
+    svg {
+      width: 80%;
+    }
+  }
 `;

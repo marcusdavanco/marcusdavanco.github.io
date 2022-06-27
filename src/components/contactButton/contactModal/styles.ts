@@ -8,7 +8,10 @@ export const Container = styled.article`
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* overflow: hidden; */
+
+  @media (max-width: 720px) {
+    padding: 1rem 1.5rem 1rem;
+  }
 
   &:before {
     content: "";

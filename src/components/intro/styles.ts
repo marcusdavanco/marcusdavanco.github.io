@@ -18,7 +18,7 @@ export const Container = styled.section`
     top: -20%;
     z-index: -1;
 
-    @media (max-width: 720px) {
+    @media (max-width: 820px) {
       transform: rotate(25deg);
       top: -25%;
       left: 2%;
@@ -37,7 +37,7 @@ export const Container = styled.section`
     bottom: -72%;
     z-index: -1;
 
-    @media (max-width: 720px) {
+    @media (max-width: 820px) {
       transform: rotate(30deg);
       bottom: -65%;
       right: 2%;
@@ -73,7 +73,7 @@ export const Text = styled.p`
       color: #dedede;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 820px) {
       & {
         max-width: 90%;
       }

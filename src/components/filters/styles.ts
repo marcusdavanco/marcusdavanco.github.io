@@ -16,7 +16,7 @@ export const Container = styled.section`
     bottom: -27%;
     z-index: -1;
 
-    @media (max-width: 720px) {
+    @media (max-width: 820px) {
       bottom: -5%;
       left: 2%;
       transform: rotate(-10deg);
@@ -34,12 +34,12 @@ export const Container = styled.section`
     bottom: -25%;
     z-index: -1;
 
-    @media (max-width: 720px) {
+    @media (max-width: 820px) {
       display: none;
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     height: unset;
   }
 `;
@@ -50,7 +50,7 @@ export const Background = styled.div`
   background: #111;
   padding-top: 3.75rem;
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     max-height: unset;
     padding-bottom: 3.75rem;
   }
@@ -62,7 +62,7 @@ export const Cards = styled.div`
   gap: 2.5rem;
   grid-template-columns: repeat(3, 22.563rem);
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -80,7 +80,7 @@ export const Card = styled.article`
   align-items: center;
   padding-top: 3rem;
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     max-width: 22.563rem;
   }
 `;

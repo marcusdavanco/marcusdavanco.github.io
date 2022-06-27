@@ -8,7 +8,7 @@ export const Container = styled.section`
   padding-bottom: 3.75rem;
   position: relative;
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     margin-top: 3.75rem;
   }
 
@@ -22,7 +22,7 @@ export const Container = styled.section`
     position: absolute;
     z-index: -1;
 
-    @media (max-width: 720px) {
+    @media (max-width: 820px) {
       transform: scaleX(-100%);
       bottom: 1%;
       left: 75%;
@@ -39,7 +39,7 @@ export const Content = styled.div`
   grid-column-gap: 2.5rem;
   grid-row-gap: 2rem;
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     display: flex;
     flex-direction: column;
 
@@ -54,9 +54,10 @@ export const Card = styled.a`
   border: 4px solid #ff004d;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.05);
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     min-width: 22.5rem;
     min-height: 20rem;
     max-width: 80.69%;
+    height: auto;
   }
 `;

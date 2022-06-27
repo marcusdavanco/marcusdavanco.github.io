@@ -44,8 +44,11 @@ export default createGlobalStyle`
 
   @media (max-width: 720px){
     html {
-      font-size: 87.5%;
+      font-size: 87.5%;      
     }
+    #root {
+      overflow-x: hidden;
+    }    
   }
 
   // React Modal
@@ -67,6 +70,11 @@ export default createGlobalStyle`
         z-index: 1000 !important;
         transition: opacity 0.3s ease-in-out;
         opacity: 0;
+
+        @media (max-width: 820px){
+          max-width: 100vw;
+          
+        }
 
         &--beforeClose {
             opacity: 0 !important;
@@ -99,13 +107,15 @@ export default createGlobalStyle`
     @media screen and (max-width: 768px) {
         .react-modal-content {
             border-radius: 10px;
-            max-width: 94%;
-            overflow-x: hidden;
-            overflow-y: scroll;     
+            max-width: 26.125rem;            
+            width: 80.69%;
+            background-image: unset;            
+            height: unset;            
+            top: -13%;
         }
         
         .react-modal-close {
-
+          transform:translateX(-4px)
         }
     }
 `;
