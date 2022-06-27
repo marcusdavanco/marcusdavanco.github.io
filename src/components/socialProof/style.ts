@@ -27,4 +27,21 @@ export const Content = styled.section`
   .ida {
     grid-column-start: 3;
   }
+
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-row-gap: 1rem;
+    /* grid-column-gap: unset; */
+    grid-template-rows: unset;
+    justify-content: space-around;
+    place-items: unset;
+    width: 80.69%;
+    align-items: center;
+
+    svg {
+      width: 35%;
+    }
+  }
 `;
