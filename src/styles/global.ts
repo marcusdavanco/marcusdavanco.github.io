@@ -110,8 +110,7 @@ export default createGlobalStyle`
             max-width: 26.125rem;            
             width: 80.69%;
             background-image: unset;            
-            height: unset;            
-            top: -13%;
+            height: unset;                        
         }
         
         .react-modal-close {
