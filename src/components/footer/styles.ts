@@ -15,7 +15,7 @@ export const Container = styled.footer`
 export const Wrapper = styled.div`
   width: 75%;
   max-width: 68rem;
-  border-top: 4px solid #ff004d;
+  border-top: 4px solid #B3006C;
   padding-top: 3.75rem;
   margin: 3.75rem;
   justify-content: center;

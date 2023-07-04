@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   margin-top: 7.5rem;
-  border-bottom: 4px solid #ff004d;
+  border-bottom: 4px solid #B3006C;
   padding-bottom: 3.75rem;
   position: relative;
 
@@ -51,7 +51,7 @@ export const Card = styled.a`
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  border: 4px solid #ff004d;
+  border: 4px solid #B3006C;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.05);
 
   @media (max-width: 820px) {

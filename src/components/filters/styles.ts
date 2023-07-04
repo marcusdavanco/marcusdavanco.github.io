@@ -72,7 +72,7 @@ export const Cards = styled.div`
 export const Card = styled.article`
   width: 100%;
   min-height: 29.375rem;
-  background-color: #ff004d;
+  background-color: #B3006C;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   display: flex;

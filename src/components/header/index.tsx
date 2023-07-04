@@ -6,7 +6,7 @@ export const Header = () => {
     <Container>
       <Wrapper>
         <Logo>Marcus Davanco</Logo>
-        <ContactButton isCta={false} color="#f4004d" activeColor="#000" />
+        <ContactButton isCta={false} color="#FF00B3" activeColor="#000" />
       </Wrapper>
     </Container>
   );

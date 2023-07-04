@@ -4,7 +4,7 @@ import { Button } from "../button";
 export const Gallery = () => {
   return (
     <Container>
-      <h2>My recent work</h2>
+      <h2>My latest work</h2>
       <Content>
         <Card href="#" />
         <Card href="#" />

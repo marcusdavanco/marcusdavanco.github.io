@@ -13,14 +13,14 @@ export const Container = styled.button<ButtonProps>`
   ${(props) =>
     props.isCta
       ? css`
-          background: linear-gradient(180deg, #ff004c 0%, #a60028 100%); ;
+          background: linear-gradient(180deg, #ff00b3 0%, #B3006C 100%); ;
         `
       : css`
           background: transparent;
         `}
   ${(props) =>
     css`
-      color: ${props.color || "#ff004d"};
+      color: ${props.color || "#ff00b3"};
     `}
   ${(props) =>
     props.isCta
@@ -28,7 +28,7 @@ export const Container = styled.button<ButtonProps>`
           border: 3px solid #404040;
         `
       : css`
-          border: 3px solid #ff004d;
+          border: 3px solid #ff00b3;
         `}
   
   border-radius: 4px;
@@ -51,7 +51,7 @@ export const Container = styled.button<ButtonProps>`
             color: #fff;
           `
         : css`
-            background-color: #ff004d;
+            background-color: #ff00b3;
             color: #000;
           `}
     ${(props) =>
