@@ -93,7 +93,7 @@ export const Container = styled.article`
       font-size: 1rem;
 
       &:focus {
-        border: 2px solid #ff004d;
+        border: 2px solid #B3006C;
       }
     }
 

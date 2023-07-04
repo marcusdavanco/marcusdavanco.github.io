@@ -47,12 +47,37 @@ export const Content = styled.div`
   }
 `;
 
-export const Card = styled.a`
+interface CardProps {
+  imageUrl: string;
+  animate?: boolean;
+}
+
+export const Card = styled.a<CardProps>`
   height: 100%;
   width: 100%;
   border-radius: 4px;
   border: 4px solid #B3006C;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.05);
+ 
+
+  &:before {
+    height: 100%;
+    width: 100%;
+    content: "";
+    display: inline-block;
+    background-image: url(${(props: CardProps) => props.imageUrl});
+    background-size:  ${props => !props.animate ? "cover" : "fill"};
+    background-position-x: center;
+    transition: background-position 10s ease-in-out, filter 0.5s ease-in-out;
+    filter: grayscale(100%)
+  }
+ 
+
+  &:hover:before {
+    background-position-y: 100%;
+    filter: grayscale(0%)
+  
+  }
 
   @media (max-width: 820px) {
     min-width: 22.5rem;

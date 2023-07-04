@@ -12,20 +12,20 @@ export const Footer = () => {
     <Container>
       <Wrapper>
         <Links>
-          <a href="https://github.com/MarcusDavanco" target="_blank">
+          <a href="https://github.com/marcusdavanco" target="_blank">
             <Github />
           </a>
           <a
-            href="https://www.linkedin.com/in/marcus-davan%C3%A7o-a9940018a/"
+            href="https://www.linkedin.com/in/marcusdavanco/"
             target="_blank"
           >
             <Linkedin />
           </a>
-          <a href="mailto:march0514s@gmail.com" target="_blank">
+          <a href="mailto:marcusdavanco@gmail.com" target="_blank">
             <Email />
           </a>
         </Links>
-        <Text>© 2022 Marcus Davanço. All rights reserved </Text>
+        <Text>© 2023 Marcus Davanço. All rights reserved </Text>
       </Wrapper>
     </Container>
   );
