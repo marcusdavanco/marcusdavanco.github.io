@@ -15,7 +15,7 @@ export const Intro = () => {
         scratching that creative itch that was left unattended for a huge period
         of my life.
       </Text>
-      <Text>And after almost 4 years, I just can’t get enough of it.</Text>
+      <Text>And after almost 5 years, I just can’t get enough of it.</Text>
     </Container>
   );
 };
