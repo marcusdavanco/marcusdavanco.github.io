@@ -1,52 +1,34 @@
-import { useEffect, useState, useCallback, FormEvent } from "react";
 import Modal from "react-modal";
-import emailjs from "@emailjs/browser";
 
 //@ts-ignore
 import Ellipsis from "../../../assets/ellipsis.svg?component";
-
-import { emailKeys } from "../../../config/emailkey";
-
 import { Button } from "../../button";
 import { Container, Text } from "./styles";
+import { useForm } from "react-hook-form";
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from "zod";
+import { useForm as useFormspree } from "@formspree/react";
 
+
+const contactSchema = z.object({
+  name: z.string().min(3).max(50),
+  email: z.string().email(),
+  message: z.string().min(3).max(500),
+});
+
+type ContactFormData = z.infer<typeof contactSchema>;
 interface ModalProps {
   isOpen: boolean;
   onRequestClose: () => void;
 }
 
 export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
-  const [isSendingMessage, setIsSendingMessage] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isMessageSent, setIsMessageSent] = useState(false);
+  const { register, handleSubmit, formState: { isSubmitted, isSubmitting } } = useForm<ContactFormData>({
+    resolver: zodResolver(contactSchema)
+  })
 
-  useEffect(() => {
-    emailjs.init(emailKeys.PUBLIC_KEY);
-  }, []);
+  const [_, handleContact] = useFormspree('mjvqvbrg')
 
-  const handleSubmit = useCallback(async (e: FormEvent) => {
-    e.preventDefault();
-
-    setIsSendingMessage(true);
-
-    try {
-      await emailjs.sendForm(
-        emailKeys.SERVICE_ID,
-        emailKeys.TEMPLATE_ID,
-        "#myForm"
-      );
-    } catch (err) {
-      console.error(err);
-    }
-
-    setIsSendingMessage(false);
-    setIsMessageSent(true);
-    setName("");
-    setEmail("");
-    setMessage("");
-  }, []);
 
   return (
     <Modal
@@ -70,47 +52,35 @@ export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
         >
           X
         </Button>
-        {!isMessageSent ? (
+        {!isSubmitted ? (
           <>
             <h2>Thanks for reaching out!</h2>
             <Text>
               Please leave your message below and I’ll return as soon as
               possible.
             </Text>
-            <form onSubmit={handleSubmit} id="myForm">
+            <form onSubmit={handleSubmit(handleContact)}>
               <div className="name">
                 <label htmlFor="name">Name</label>
                 <input
-                  id="name"
-                  name="name"
                   autoComplete="off"
-                  required
-                  onChange={(event) => {
-                    setName(event.target.value);
-                  }}
+                  {...register("name")}
                 />
               </div>
 
               <div className="email">
                 <label htmlFor="email">E-mail</label>
                 <input
-                  id="email"
-                  name="email"
-                  type="email"
                   autoComplete="off"
-                  required
-                  onChange={(event) => setEmail(event.target.value)}
+                  {...register("email")}
                 />
               </div>
 
               <div className="message">
                 <label htmlFor="message">Message</label>
                 <textarea
-                  id="message"
-                  name="message"
                   autoComplete="off"
-                  required
-                  onChange={(event) => setMessage(event.target.value)}
+                  {...register("message")}
                 />
               </div>
 
@@ -119,9 +89,9 @@ export const ContactModal = ({ isOpen, onRequestClose }: ModalProps) => {
                 isCta={true}
                 color="#fff"
                 activeColor="#fff"
-                onClick={() => {}}
+                onClick={() => { }}
               >
-                {isSendingMessage ? <Ellipsis /> : "Send"}
+                {isSubmitting ? <Ellipsis /> : "Send"}
               </Button>
             </form>
           </>

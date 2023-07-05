@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   margin-top: 7.5rem;
-  border-bottom: 4px solid #B3006C;
+  border-bottom: 4px solid #ff0d62;
   padding-bottom: 3.75rem;
   position: relative;
 
@@ -56,8 +56,9 @@ export const Card = styled.a<CardProps>`
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  border: 4px solid #B3006C;
-  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.05);
+  border: 4px solid transparent;
+  /* box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.05); */
+  transition: border 0.5s ease-in-out;
  
 
   &:before {
@@ -76,7 +77,10 @@ export const Card = styled.a<CardProps>`
   &:hover:before {
     background-position-y: 100%;
     filter: grayscale(0%)
-  
+  }
+
+  &:hover {
+    border: 4px solid #ff0d62;
   }
 
   @media (max-width: 820px) {

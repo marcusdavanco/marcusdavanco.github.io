@@ -9,11 +9,16 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@formspree/react": "^2.4.4",
+    "@hookform/resolvers": "^3.1.1",
     "@types/react-modal": "^3.13.1",
+    "gh-pages": "^5.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-hook-form": "^7.45.1",
     "react-modal": "^3.15.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@honkhonk/vite-plugin-svgr": "^1.1.0",

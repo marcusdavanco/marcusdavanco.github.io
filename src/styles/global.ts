@@ -11,8 +11,8 @@ export default createGlobalStyle`
     outline: 0;
   }
   body {
-    background: #404040;
-    color:  #CCC;
+    background: #474747;
+    color:  #bfbfbf;
     -webkit-font-smoothing: antialiased;
   }
   body, input, button {
@@ -29,7 +29,7 @@ export default createGlobalStyle`
     font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
-    color: #9c9c9c;
+    color: #8f8f8f;
   }
 
   button {
@@ -89,7 +89,7 @@ export default createGlobalStyle`
         width: 100%;  
         max-width: 50rem;        
         height: 37.5rem;
-        background: #404040;
+        background: #474747;
         box-shadow: 24px 24px 48px rgba(112, 112, 112, 0.15);        
         position: relative;
         border-radius: 4px;        

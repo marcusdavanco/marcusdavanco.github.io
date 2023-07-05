@@ -8,7 +8,7 @@ export const Intro = () => {
         After a long adventure through the dark realms of accountancy, inspired
         by seeing how
         <span>
-          technology turned possible businesses that where once far below the
+          technology turned possible businesses that were once far below the
           coasean floor
         </span>
         , I’ve decided to change my career and put my programming skills to use,

@@ -53,7 +53,7 @@ export const Text = styled.p`
     font-size: 1.5rem;
     line-height: 2.063rem;
     margin-bottom: 2rem;
-    color: #dedede;
+    color: #d7d7d7;
     max-width: 22.313rem;
     text-align: center;
   }
@@ -63,14 +63,15 @@ export const Text = styled.p`
     font-size: 1.5rem;
     line-height: 2.063rem;
     margin-bottom: 3.75rem;
-    color: #ccc;
+    color: #bfbfbf;
     max-width: 47.188rem;
     text-align: center;
 
     span {
       font-weight: 900;
       margin-left: 0.25rem;
-      color: #dedede;
+      color: #d7d7d7;
+      border-bottom: 4px solid #ff0d62;
     }
 
     @media (max-width: 820px) {

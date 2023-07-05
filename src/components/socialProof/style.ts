@@ -6,7 +6,7 @@ export const Container = styled.section`
 
 export const Background = styled.section`
   height: 38.125rem;
-  background-color: #B3006C;
+  background-color: #ff0d62;
   padding: 3.75rem 0;
   display: flex;
   justify-content: center;
