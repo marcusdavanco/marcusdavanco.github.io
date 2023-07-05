@@ -70,7 +70,8 @@ export const Card = styled.a<CardProps>`
     background-size:  ${props => !props.animate ? "cover" : "fill"};
     background-position-x: center;
     transition: background-position 10s ease-in-out, filter 0.5s ease-in-out;
-    filter: grayscale(100%)
+    filter: grayscale(100%);
+    min-height: 300px;
   }
  
 
