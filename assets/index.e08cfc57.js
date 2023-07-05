@@ -495,7 +495,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       }
     }
   }
-`,Up=()=>_e(Zp,{children:[P(ks,{children:"Hi there, I\u2019m Marcus"}),_e(ks,{children:["After a long adventure through the dark realms of accountancy, inspired by seeing how",P("span",{children:"technology turned possible businesses that were once far below the coasean floor"}),", I\u2019ve decided to change my career and put my programming skills to use, scratching that creative itch that was left unattended for a huge period of my life."]}),P(ks,{children:"And after almost 4 years, I just can\u2019t get enough of it."})]}),Wp=Oe.section`
+`,Up=()=>_e(Zp,{children:[P(ks,{children:"Hi there, I\u2019m Marcus"}),_e(ks,{children:["After a long adventure through the dark realms of accountancy, inspired by seeing how",P("span",{children:"technology turned possible businesses that were once far below the coasean floor"}),", I\u2019ve decided to change my career and put my programming skills to use, scratching that creative itch that was left unattended for a huge period of my life."]}),P(ks,{children:"And after almost 5 years, I just can\u2019t get enough of it."})]}),Wp=Oe.section`
   width: 100%;
   height: 33.125rem;
   position: relative;
@@ -663,7 +663,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     max-width: 80.69%;
     height: auto;
   }
-`,eh=()=>_e(Xp,{children:[P("h2",{children:"My latest work"}),_e($p,{children:[P(Ar,{href:"https://github.com/marcusdavanco/github-blog",target:"_blank",imageUrl:"https://github.com/marcusdavanco/github-blog/raw/main/.github/github-blog.png",animate:!0}),P(Ar,{href:"https://github.com/marcusdavanco/coffe-delivery",target:"_blank",imageUrl:"https://github.com/marcusdavanco/coffe-delivery/raw/main/.github/coffe-delivery.png",animate:!0}),P(Ar,{href:"https://github.com/marcusdavanco/todo-list",target:"_blank",imageUrl:"https://github.com/marcusdavanco/todo-list/raw/main/.github/preview_web.png"}),P(Ar,{href:"#",imageUrl:""}),P(Ar,{href:"#",imageUrl:""}),P(Ar,{href:"#",imageUrl:""}),P(Ja,{activeColor:"#fff",color:"#fff",onClick:()=>window.open("https://github.com/MarcusDavanco?tab=repositories","_blank"),type:"button",children:"view more"})]})]}),th=Oe.section`
+`,eh=()=>_e(Xp,{children:[P("h2",{children:"My latest work"}),_e($p,{children:[P(Ar,{href:"https://ignite-shop-eight-gules.vercel.app/",imageUrl:"https://github.com/marcusdavanco/ignite-shop/raw/main/.github/ignite-shop.png"}),P(Ar,{href:"https://github.com/marcusdavanco/github-blog",target:"_blank",imageUrl:"https://github.com/marcusdavanco/github-blog/raw/main/.github/github-blog.png",animate:!0}),P(Ar,{href:"https://github.com/marcusdavanco/coffe-delivery",target:"_blank",imageUrl:"https://github.com/marcusdavanco/coffe-delivery/raw/main/.github/coffe-delivery.png",animate:!0}),P(Ar,{href:"https://github.com/marcusdavanco/todo-list",target:"_blank",imageUrl:"https://github.com/marcusdavanco/todo-list/raw/main/.github/preview_web.png"}),P(Ar,{href:"#",imageUrl:""}),P(Ar,{href:"#",imageUrl:""}),P(Ja,{activeColor:"#fff",color:"#fff",onClick:()=>window.open("https://github.com/MarcusDavanco?tab=repositories","_blank"),type:"button",children:"view more"})]})]}),th=Oe.section`
   margin-top: 3.75rem;
 `,nh=Oe.section`
   height: 38.125rem;
