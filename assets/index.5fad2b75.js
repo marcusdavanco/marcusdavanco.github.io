@@ -643,7 +643,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     background-size:  ${e=>e.animate?"fill":"cover"};
     background-position-x: center;
     transition: background-position 10s ease-in-out, filter 0.5s ease-in-out;
-    filter: grayscale(100%)
+    filter: grayscale(100%);
+    min-height: 300px;
   }
  
 
