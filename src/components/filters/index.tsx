@@ -16,16 +16,16 @@ export const Filters = () => {
             <ToolsIcon />
             <Text>GNU/Linux</Text>
             <Text>Figma</Text>
-            <Text>VSCode</Text>
+            <Text>VSCode / Vim</Text>
             <Text>Git / GitHub</Text>
-            <Text>Firebase</Text>
             <Text>...</Text>
           </Card>
           <Card>
             <PaletteIcon />
             <Text>CSS3</Text>
-            <Text>Tailwind</Text>
+            <Text>TailwindCSS</Text>
             <Text>Styled Components</Text>
+            <Text>ChakraUI / MaterialUI</Text>
             <Text>SASS / LESS</Text>
             <Text>...</Text>
           </Card>
@@ -33,9 +33,9 @@ export const Filters = () => {
             <CodeIcon />
             <Text>HTML5</Text>
             <Text>JavaScript / TypeScript</Text>
-            <Text>ReactJS / React Native</Text>
-            <Text>RTL / Jest</Text>
+            <Text>ReactJS / NextJS</Text>
             <Text>REST</Text>
+            <Text>RTL / Jest</Text>
             <Text>...</Text>
           </Card>
         </Cards>
