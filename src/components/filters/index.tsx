@@ -6,13 +6,32 @@ import CodeIcon from "../../assets/code_icon.svg?component";
 import PaletteIcon from "../../assets/palette_icon.svg?component";
 //@ts-ignore
 import ToolsIcon from "../../assets/tools_icon.svg?component";
+import { useEffect, useState } from "react";
 
 export const Filters = () => {
+  const [offset, setOffset] = useState(0);
+  const [isDisplayed, setIsDisplayed] = useState(false);
+
+  const handleScroll= () => setOffset(window.pageYOffset)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (offset > 300) {
+      setIsDisplayed(true);
+    } 
+  }, [offset]);
+
   return (
     <Container>
       <Background>
-        <Cards>
-          <Card>
+        <Cards className={isDisplayed ? "animated" : ""}>
+          <Card >
             <ToolsIcon />
             <Text>GNU/Linux</Text>
             <Text>Figma</Text>

@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const point = keyframes`
+ 0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+`
 
 export const Container = styled.section`
   margin-top: 7.5rem;
@@ -22,6 +34,9 @@ export const Container = styled.section`
     left: 49.5%;
     z-index: -1;
     top: -15%;
+    animation-name: ${point};
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 
     @media (max-width: 720px) {
       transform: scale(75%);

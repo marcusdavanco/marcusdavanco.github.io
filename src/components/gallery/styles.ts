@@ -1,4 +1,12 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const wiggle = keyframes`
+ 0% { transform: rotate(20deg); } 
+ 25% { transform: rotate(12deg); }
+ 50% { transform: rotate(20.5deg); }
+ 75% { transform: rotate(10deg); }
+ 100% { transform: rotate(20deg); }
+`
 
 export const Container = styled.section`
   display: flex;
@@ -21,6 +29,9 @@ export const Container = styled.section`
     bottom: 5%;
     position: absolute;
     z-index: -1;
+    animation-name: ${wiggle};
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 
     @media (max-width: 820px) {
       transform: scaleX(-100%);
