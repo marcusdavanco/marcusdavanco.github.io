@@ -17,7 +17,7 @@ function App() {
       <Intro />
       <Filters />
       <Gallery />
-      <SocialProof />
+      {/* <SocialProof /> */}
       <Contact />
       <Footer />
     </>
